@@ -8,9 +8,11 @@ const Nav = async () => {
   const session = await getServerSession(options)
 
   return (
-    <header className="bg-gray-600 text-gray-100">
+    <header className= "bg-gradient-to-r from-slate-400 to-black text-gray-100">
       <nav className="flex justify-between items-center w-full px-10 py-4">
-        <div>My Site</div>
+        <div>
+          <Link href="/" className="text-black">NextAuth.js</Link>
+        </div>
         <div className="flex gap-10">
           <Link href="/">Home</Link>
           <Link href="/CreateUser">Create User</Link>
