@@ -39,7 +39,7 @@ const UserForm = () => {
 
   return (
     <div className="w-full m-auto max-w-[450px] min-h-screen flex justify-start items-center flex-col pt-20 px-4">
-      <span className="flex justify-center border-b-2 w-[95%] border-slate-400 text-xl font-semibold pb-2 text-slate-500">
+      <span className="flex justify-center border-b-2 w-[95%] border-white text-xl font-semibold pb-2 text-white">
         Create New User
       </span>
       <form
@@ -48,7 +48,7 @@ const UserForm = () => {
         className="w-full flex items-center flex-col"
       >
         <div className="flex flex-row w-[95%] my-6">
-          <label htmlFor="name" className="w-1/5 text-[16px] text-slate-500">
+          <label htmlFor="name" className="w-1/5 text-[16px] text-white">
             Full Name
           </label>
           <input
@@ -63,7 +63,7 @@ const UserForm = () => {
         </div>
 
         <div className="flex flex-row w-[95%] mb-6">
-          <label htmlFor="email" className="w-1/5 text-[16px] text-slate-500">
+          <label htmlFor="email" className="w-1/5 text-[16px] text-white">
             Email
           </label>
           <input
@@ -80,7 +80,7 @@ const UserForm = () => {
         <div className="flex flex-row w-[95%] mb-6">
           <label
             htmlFor="password"
-            className="w-1/5 text-[16px] text-slate-500"
+            className="w-1/5 text-[16px] text-white"
           >
             Password
           </label>
@@ -97,8 +97,8 @@ const UserForm = () => {
 
         <button
           type="submit"
-          className="w-full py-3 rounded-full bg-[#9ebaa2] 
-          bg-gradient-to-r from-slate-400 to-black text-white text-[14px] 
+          className="w-full py-3 rounded-full
+          bg-gray-950 text-white text-[14px] 
           leading-[17px] font-bold"
         >
           Submit

@@ -7,7 +7,6 @@ export async function POST(req){
 try {
     const body = await req.json()
     const userData = body.formData
-    console.log(userData)
 
     await mongoDBConnect()
    
@@ -29,7 +28,7 @@ try {
     userData.password = hashPassword
 
     await User.create(userData)
-    return NextResponse.json({ message: "User Created"}, { status: 200 });
+    return NextResponse.json({ message: "User Created", userData}, { status: 200 });
     
 } catch (error) {
     console.log(error)
